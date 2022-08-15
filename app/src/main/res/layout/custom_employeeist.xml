@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/cell_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EAF5F6"
+                android:visibility="visible">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:cardElevation="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginVertical="20dp"
+                    app:cardCornerRadius="50dp">
+
+                    <ImageView
+                        android:id="@+id/iv_userimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/noimage"
+                        android:padding="5dp"
+                        android:scaleType="fitXY"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cell_body"
+                android:layout_width="match_parent"
+                android:background="#BCDCF8"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo"
+                        android:text="username"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/txt_userId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="userid "
+                        android:layout_marginHorizontal="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/txt_userage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/txt_userSalary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0000"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
